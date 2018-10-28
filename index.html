@@ -17,9 +17,6 @@
 		@font-face {font-display: swap;font-family: "PT Sans";font-style: normal;font-weight: bold;src: local("PT Sans Bold"), url("./fonts/PTS75F_W.woff2") format("woff2");}
 		@font-face {font-display: swap;font-family: "PT Sans Narrow";font-weight: bold;src: local("PT Sans Narrow Bold"), url("./fonts/PTN77F_W.woff2") format("woff2");}
 	</style>
-	<style type="text/css">
-		.main__greeting {font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;}
-	</style>
 	<link rel="stylesheet" href="styles.css">
 
 </head>
@@ -28,6 +25,9 @@
 
 	<div class="page__wrapper">
 		<div class="page__wrapper-content">
+			<style>.header{width:100%;height:92px;padding:0 40px;border-bottom:1px solid #f0f0f0;display:flex;align-items:center;background:#fff}
+			.link,.link:active,.link:visited{color:rgba(51,51,51,.6)}.link{text-decoration:none}.link:hover,.link_active{color:inherit}.logo{display:inline-block;width:108px;height:27px;position:relative;background-image:url(assets/logo.png);background-repeat:no-repeat;background-position:left top;background-size:cover}.logo__ya,.logo__ya-sub{display:block;position:absolute;outline:0;height:100%;left:0;top:0}.logo__ya{z-index:10;width:69px}.logo__ya-sub{z-index:5;width:100%}
+			</style>
 			<header class="header">
 				<div class="logo header__logo">
 					<a href="yandex.ru" class="link logo__ya"></a>
@@ -58,6 +58,7 @@
 			</header>
 			<style type="text/css">
 				.content{width:100%;display:flex;flex-wrap:wrap;justify-content:space-between;padding-top:29px}.content__item{width:100%;margin-bottom:29px;position:relative}.content__item_half{width:49%}.content__item_main{padding-left:40px}.content__item_scenarios{padding-right:40px}.content__item-header{font-size:18px;font-weight:700;margin-bottom:20px}.content__item-header_devices{padding-left:40px;display:inline-block;margin-right:11px}
+				.main{height:331px;border-radius:20px;padding:0 20px 0 25px;display:flex;justify-content:space-between;background:url(assets/sh.webp) center center/cover no-repeat}.main__greeting{margin-top:6px;font-size:27px;font-weight:700}.main__info{width:61.585%;padding-top:20px;padding-left:20px;background:rgba(255,255,255,.6)}.main__panel{margin-bottom:14px;position:relative}.main__status{margin-top:6px;line-height:16px}.main__upcoming{width:220px;height:100%;overflow-y:scroll}.main__upcoming-wrapper{width:200px;height:100%;overflow:hidden}.main__weather{margin-top:25px}.main__greeting {font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;}
 			</style>
 			<main class="content">
 
@@ -212,6 +213,11 @@
 						Избранные устройства
 					</span>
 
+					<style>
+						.button{cursor:pointer;display:flex;justify-content:center;align-items:center;background:#fff}.button_color_yellow{background:#ffd93e}.button_size_l{font-size:18px;font-weight:700;height:60px;border-radius:20px}.button:hover{box-shadow:0 2px 6px 0 rgba(255,225,225,.6)}.button:active{box-shadow:none}
+						.filter__select{display:none}.filter__item-label{display:inline-block;font-size:13px;line-height:1;font-weight:700;background:#f7f7f7;min-height:30px;padding:8px 13px;border-radius:15px;margin-right:11px;cursor:pointer}.filter__item-radio,.filter__item-radio_kitchen:checked~.devices .panel{display:none}.filter__item-label:hover,.filter__item-radio:checked+label{background:#ffd93e}.filter__item-radio_kitchen:checked~.devices .panel_kitchen{display:flex}.filter__item-radio_room:checked~.devices .panel{display:none}.filter__item-radio_room:checked~.devices .panel_room{display:flex}.filter__item-radio_lamp:checked~.devices .panel{display:none}.filter__item-radio_lamp:checked~.devices .panel_lamp{display:flex}.filter__item-radio_cam:checked~.devices .panel{display:none}.filter__item-radio_cam:checked~.devices .panel_cam{display:flex}
+					</style>
+
 					<div class="filter__select">
 						<button class="filter__select-button" type="button">
 							<span class="button__text">Все</span>
@@ -330,6 +336,7 @@
 
 	<style type="text/css">
 	.adjust-bar,.adjust-bar__container_theme_temp{position:relative}.adjust-bar{-webkit-appearance:none;appearance:none;outline:0;border-radius:30px;width:100%;height:60px;margin:0;display:flex;justify-content:space-between;align-items:center}.adjust-bar::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;cursor:pointer;width:60px;height:60px;border:3px solid rgba(51,51,51,.1);border-radius:30px;box-shadow:0 0 0 4px #fff}.adjust-bar::-moz-range-thumb{box-sizing:border-box;cursor:pointer;width:60px;height:60px;border:3px solid rgba(51,51,51,.1);border-radius:30px;background:0 0;box-shadow:0 0 0 4px #fff}.adjust-bar::-moz-range-track{background:0 0}.adjust-bar__container_theme_temp::after,.adjust-bar__container_theme_temp::before{color:#fff;font-size:18px;font-weight:700;position:absolute;top:20px;z-index:1;pointer-events:none}.adjust-bar__container_theme_temp::before{content:"–10";left:15px}.adjust-bar__container_theme_temp::after{content:"+30";right:15px}.adjust-bar__container_theme_light{position:relative}.adjust-bar__container_theme_light::after,.adjust-bar__container_theme_light::before{content:"";position:absolute;z-index:1;pointer-events:none}.adjust-bar__container_theme_light::before{top:14px;left:14px;width:30px;height:30px;background:url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='none' d='M-1140-250H226v768h-1366z'/%3E%3Cpath d='M0 0h24v24H0z'/%3E%3Cg transform='translate(1 1)' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'%3E%3Ccircle stroke='%23fff' cx='11' cy='11' r='5'/%3E%3Cpath d='M11 0v2M11 20v2M3.22 3.22l1.42 1.42M17.36 17.36l1.42 1.42M0 11h2M20 11h2M3.22 18.78l1.42-1.42M17.36 4.64l1.42-1.42' stroke='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") center center/contain no-repeat}.adjust-bar__container_theme_light::after{top:13px;right:13px;width:34px;height:34px;background:url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='none' d='M-1140-250H226v768h-1366z'/%3E%3Cpath d='M0 0h24v24H0z'/%3E%3Cg transform='translate(1 1)' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Ccircle stroke='%23fff' cx='11' cy='11' r='5'/%3E%3Cpath d='M11 0v2M11 20v2M3.22 3.22l1.42 1.42M17.36 17.36l1.42 1.42M0 11h2M20 11h2M3.22 18.78l1.42-1.42M17.36 4.64l1.42-1.42' stroke='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") center center/contain no-repeat}.adjust-bar_theme_temp{background-image:linear-gradient(90deg,#068fff 0,#ffd800 50%,#f76b1c 100%)}.adjust-bar_theme_light{background-image:linear-gradient(90deg,#ffe682 0,#ff9e00 100%)}
+	.modal{display:none;flex-direction:column;justify-content:center;align-items:center;position:fixed;z-index:1;left:0;top:0;width:100%;height:100%;overflow:auto;background:rgba(51,51,51,.5)}.modal_open{display:flex}.modal_open .modal__content{animation:modal .2s ease forwards}.modal__title{font-size:27px;font-weight:700;margin-bottom:6px}.modal__value{box-sizing:content-box;position:absolute;top:20px;right:20px;font-size:36px;font-weight:700;max-width:62px;height:40px;padding-right:32px}.modal__value_temp{background:url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg%3E%3Cpath d='M0 0h24v24H0z'%3E%3C/path%3E%3Cpath d='M14 14.76V3.5a2.5 2.5 0 1 0-5 0v11.26a4.5 4.5 0 1 0 5 0z' stroke='%23F5A623' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Ccircle fill='%23FFD93E' fill-rule='nonzero' cx='11.5' cy='18.5' r='3.5'%3E%3C/circle%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") calc(100% + 10px) 0/contain no-repeat}.modal__value_light{height:45px;padding-right:45px;background:url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='none' d='M-1140-250H226v768h-1366z'/%3E%3Cpath d='M0 0h24v24H0z'/%3E%3Cg transform='translate(1 1)' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Ccircle stroke='%23333' stroke-opacity='.4' cx='11' cy='11' r='5'/%3E%3Cpath stroke-opacity='.1' d='M11 0v2M11 20v2M3.22 3.22l1.42 1.42M17.36 17.36l1.42 1.42M0 11h2M20 11h2M3.22 18.78l1.42-1.42M17.36 4.64l1.42-1.42' stroke='%23333'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") right center/contain no-repeat}.modal__status{margin-bottom:20px}.modal__adjust{margin-top:25px}.modal__button{width:48.5%}.modal__content{max-width:640px;width:100%}.modal__body{position:relative;flex-shrink:0;padding:25px;margin-bottom:15px;border-radius:20px;background:#fff}.modal__controls{width:100%;display:flex;justify-content:space-between;flex-wrap:wrap}@keyframes modal{from{transform:scale(.2)}to{transform:scale(1)}}
 	</style>
 
 	<div class="modal modal_temp">
@@ -386,7 +393,8 @@
 	</div>
 	<div class="stats">
 	</div>
-
+<style>.knob,.knob svg{width:220px;height:220px}.knob{display:flex;justify-content:center;align-items:center;position:relative}.knob svg{transform:rotate(90deg)}.knob__indicator{fill:none;stroke:#f5a623;stroke-width:20px;stroke-dasharray:0 629;transform:rotate(29deg)}.knob__indicator-bounds{fill:transparent;stroke:#fff;stroke-width:21px;stroke-dasharray:99 629;transform:rotate(-29deg)}.knob__indicator-bg{fill:rgba(51,51,51,.7)}.knob__indicator-mask{fill:transparent;stroke:#fff;stroke-width:22px;stroke-dasharray:4 1;transform:rotate(1deg)}.knob__self{fill:#fefefe;filter:url(#knob-shadow);cursor:pointer}.knob__value{font-size:66px;font-weight:700;position:absolute;user-select:none;pointer-events:none}.knob__wrapper{display:flex;justify-content:center;align-items:center;height:80%}
+</style>
 	<div class="modal modal_knob">
 		<div class="modal__content">
 
