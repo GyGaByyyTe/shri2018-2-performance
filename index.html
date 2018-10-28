@@ -10,16 +10,11 @@
 	<link rel="preload" as="image" href="./assets/logo.png">
 	<link rel="preload" as="image" href="./assets/sh.webp">
 	<link rel="preload" as="image" href="./assets/banner.webp">
-	<link rel="preload" href="./fonts/PTS75F_W.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="./fonts/PTN77F_W.woff2" as="font" type="font/woff2" crossorigin>
-	<style>
-		@font-face {font-display: swap;font-family: "PT Sans";font-style: normal;font-weight: bold;src: local("PT Sans Bold"), url("./fonts/PTS75F_W.woff2") format("woff2");}
-		@font-face {font-display: swap;font-family: "PT Sans Narrow";font-weight: bold;src: local("PT Sans Narrow Bold"), url("./fonts/PTN77F_W.woff2") format("woff2");}
-	</style>
+	<!-- <link rel="preload" href="./fonts/PTS75F_W.woff2" as="font" type="font/woff2" crossorigin> -->
+	<!-- <link rel="preload" href="./fonts/PTN77F_W.woff2" as="font" type="font/woff2" crossorigin> -->
+
 	<link rel="stylesheet" href="styles.css">
-	<style type="text/css">
-		.main__greeting {font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;}
-	</style>
+
 </head>
 
 <body class="page">
@@ -55,7 +50,7 @@
 				</div>
 			</header>
 			<style type="text/css">
-				.content{width:100%;display:flex;flex-wrap:wrap;justify-content:space-between;padding-top:29px}.content__item{width:100%;margin-bottom:29px;position:relative}.content__item_half{width:49%}.content__item_main{padding-left:40px}.content__item_scenarios{padding-right:40px}.content__item-header{font-size:18px;font-weight:700;margin-bottom:20px}.content__item-header_devices{padding-left:40px;display:inline-block;margin-right:11px}#root{position:absolute;left:-10000px}
+				.content{width:100%;display:flex;flex-wrap:wrap;justify-content:space-between;padding-top:29px}.content__item{width:100%;margin-bottom:29px;position:relative}.content__item_half{width:49%}.content__item_main{padding-left:40px}.content__item_scenarios{padding-right:40px}.content__item-header{font-size:18px;font-weight:700;margin-bottom:20px}.content__item-header_devices{padding-left:40px;display:inline-block;margin-right:11px}
 			</style>
 			<main class="content">
 
@@ -435,6 +430,13 @@
 		 selectOptions.forEach(a => { a.addEventListener("click", function (c) { document.querySelector("#" + c.target.dataset.group).checked = !0, selectOptions.forEach(d => d.classList.toggle("filter__select-item_checked", !1)), c.target.classList.toggle("filter__select-item_checked", !0), popup.classList.toggle("filter__select-popup_open", !1), selectButtonText.innerText = c.target.innerText }) }), document.querySelector(".menu__icon").addEventListener("click", function () { document.querySelector(".menu").classList.toggle("menu_open") });</script>
 
 	<!-- <link href="bootstrap.min.css" rel="stylesheet" media="screen"> -->
+	<style type="text/css">
+		.main__greeting {font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;}
+	</style>
+		<style>
+				@font-face {font-display: swap;font-family: "PT Sans";font-style: normal;font-weight: bold;src: local("PT Sans Bold"), url("./fonts/PTS75F_W.woff2") format("woff2");}
+				@font-face {font-display: swap;font-family: "PT Sans Narrow";font-weight: bold;src: local("PT Sans Narrow Bold"), url("./fonts/PTN77F_W.woff2") format("woff2");}
+			</style>
 </body>
 
 </html>
