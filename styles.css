@@ -22,25 +22,7 @@
   box-shadow: none;
 }
 /* deleted .content */
-.devices {
-  display: flex;
-  justify-content: flex-start;
-  overflow-x: hidden;
-  padding: 20px 0 6px 40px;
-}
-.devices__panel {
-  margin-right: 15px;
-}
-.devices::after {
-  content: "";
-  display: inline-block;
-  min-width: 25px;
-}
-.devices__paginator {
-  position: absolute;
-  top: 0;
-  right: 40px;
-}
+/* deleted devices */
 .filter__select {
   display: none;
 }
